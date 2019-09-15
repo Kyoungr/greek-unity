@@ -1,0 +1,27 @@
+html {
+    background: url("https://images.unsplash.com/photo-1560157113-3ccace8aeb35?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 150%;
+    text-transform: bold;
+    padding: 20px;
+}
+
+a {
+    color: black
+}
+
+body {
+    text-align: center;
+}
+
+.boxmodel {
+    border: 5px solid black;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}

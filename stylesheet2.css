@@ -1,0 +1,30 @@
+html {
+    background: url("https://images.unsplash.com/photo-1560157113-3ccace8aeb35?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    transition: all 1s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
