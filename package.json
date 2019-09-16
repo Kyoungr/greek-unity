@@ -1,0 +1,22 @@
+{
+    "name": "greek-unity",
+    "version": "1.0.0",
+    "description": "This web application will allow different Greek organizations to communicate with one another on a safe, user-friendly interface.",
+    "main": "index.js",
+    "dependencies": {
+        "@hapi/hapi": "^18.4.0",
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.4.1",
+        "popper": "^1.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kyoungr/greek-unity.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Kyoungr/greek-unity/issues"
+    },
+    "homepage": "https://github.com/Kyoungr/greek-unity#readme"
+}
