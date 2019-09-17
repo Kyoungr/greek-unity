@@ -9,6 +9,15 @@ const init = async() => {
         host: 'localhost'
     });
 
+    server.route({
+        method: 'GET',
+        path: '/',
+        handler: (request, h) => {
+
+            return 'This will soon link to my web page';
+        }
+    });
+
     await server.start();
     console.log('Server running on %s', server.info.uri);
 };
