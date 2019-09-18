@@ -7,6 +7,9 @@ const path = require('path');
 
 const init = async() => {
 
+    /**
+     * This piece of code creates the server.
+     */
     const server = Hapi.server({
         port: 3000,
         routes: {
@@ -16,8 +19,15 @@ const init = async() => {
         }
     });
 
+    /**
+     * This piece of code allows me to read static files.
+     */
     await server.register(Inert);
 
+
+    /**
+     * This piece of code is where I structure my route to access my files
+     */
     server.route({
         method: 'GET',
         path: '/{param*}',
