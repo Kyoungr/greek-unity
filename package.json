@@ -2,9 +2,9 @@
     "name": "greek-unity",
     "version": "1.0.0",
     "description": "This web application will allow different Greek organizations to communicate with one another on a safe, user-friendly interface.",
-    "main": "server.js",
+    "main": "index.js",
     "scripts": {
-        "nodemon": "nodemon server.js"
+        "nodemon": "nodemon index.js"
     },
     "dependencies": {
         "@hapi/hapi": "^18.4.0",

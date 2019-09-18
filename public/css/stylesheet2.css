@@ -3,6 +3,14 @@ html {
     background-size: cover;
 }
 
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 200px;
+    font-size: 2em;
+    color: whitesmoke;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;

@@ -1,20 +1,28 @@
 'use strict';
 
 const Hapi = require('@hapi/hapi');
+const Inert = require('inert');
+const path = require('path');
+
 
 const init = async() => {
 
     const server = Hapi.server({
         port: 3000,
-        host: 'localhost'
+        routes: {
+            files: {
+                relativeTo: path.join(__dirname, 'public')
+            }
+        }
     });
+
+    await server.register(Inert);
 
     server.route({
         method: 'GET',
-        path: '/',
-        handler: (request, h) => {
-
-            return 'This will soon link to my web page';
+        path: '/{param*}',
+        handler: {
+            directory: { path: './', redirectToSlash: true, listing: true }
         }
     });
 
